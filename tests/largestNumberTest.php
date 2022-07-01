@@ -5,7 +5,7 @@ class LargestNumberTest extends \PHPUnit\Framework\TestCase {
         $array = [];
         $largestNumber = new App\LargestNumber;
         $result = $largestNumber->nthLargestNumber($array, 10);
-        $this->assertEquals(false, $result);
+        $this->assertFalse($result);
     }
 
     public function testNthLargestNumber() {
